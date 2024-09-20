@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Cost of Living Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cost of Living Comparison</h1>
+
+    <!-- Form for entering city and general living expenses -->
+    <div>
+        <label for="city1">City 1 (Current City):</label>
+        <input type="text" id="city1" placeholder="Enter your current city">
+
+        <label for="city2">City 2 (City You Want to Move To):</label>
+        <input type="text" id="city2" placeholder="Enter the city you want to move to">
+
+        <h2>Your Current Living Expenses</h2>
+
+        <label for="rent">Rent:</label>
+        <input type="number" id="rent" placeholder="Enter your rent cost">
+
+        <label for="utilities">Utilities (Electricity, Heating, Water, Garbage):</label>
+        <input type="number" id="utilities" placeholder="Enter your utility costs">
+
+        <label for="groceries">Groceries (Estimated Monthly Cost):</label>
+        <input type="number" id="groceries" placeholder="Enter your groceries cost">
+
+        <label for="phoneBill">Phone Bill (Monthly Plan with Calls and Data):</label>
+        <input type="number" id="phoneBill" placeholder="Enter your phone bill cost">
+
+        <label for="entertainment">Entertainment:</label>
+        <input type="number" id="entertainment" placeholder="Enter your entertainment cost">
+
+        <label for="gas">Gas (Monthly Cost for Gasoline):</label>
+        <input type="number" id="gas" placeholder="Enter your gas cost">
+
+        <label for="gym">Gym (Monthly Fee):</label>
+        <input type="number" id="gym" placeholder="Enter your gym cost">
+
+        <button id="calculateBtn">Calculate Costs in Other City</button>
+    </div>
+
+    <!-- Hidden result section -->
+    <div id="resultSection" style="display: none;">
+        
+        <!-- Overall percentage change statement -->
+        <p id="overallChange"></p>
+
+        <!-- Comparison Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th id="city1Title">Your Current Living Expenses</th>
+                    <th id="city2Title">Total Living Costs in City 2</th>
+                </tr>
+            </thead>
+            <tbody id="comparisonTable">
+                <tr>
+                    <td>Rent</td>
+                    <td id="rentCity1"></td>
+                    <td id="rentCity2"></td>
+                </tr>
+                <tr>
+                    <td>Utilities</td>
+                    <td id="utilitiesCity1"></td>
+                    <td id="utilitiesCity2"></td>
+                </tr>
+                <tr>
+                    <td>Groceries</td>
+                    <td id="groceriesCity1"></td>
+                    <td id="groceriesCity2"></td>
+                </tr>
+                <tr>
+                    <td>Phone Bill</td>
+                    <td id="phoneBillCity1"></td>
+                    <td id="phoneBillCity2"></td>
+                </tr>
+                <tr>
+                    <td>Entertainment</td>
+                    <td id="entertainmentCity1"></td>
+                    <td id="entertainmentCity2"></td>
+                </tr>
+                <tr>
+                    <td>Gas</td>
+                    <td id="gasCity1"></td>
+                    <td id="gasCity2"></td>
+                </tr>
+                <tr>
+                    <td>Gym</td>
+                    <td id="gymCity1"></td>
+                    <td id="gymCity2"></td>
+                </tr>
+                <!-- New row for total living costs -->
+                <tr>
+                    <td><strong>Total Living Costs</strong></td>
+                    <td id="totalCity1Cost"></td>
+                    <td id="totalCity2Cost"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Price Differences Section -->
+        <div id="priceDifferences"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
