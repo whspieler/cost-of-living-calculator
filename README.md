@@ -25,7 +25,7 @@ The calculator fetches live cost data from an API and provides a detailed compar
    - The user enters two cities: their current city and the city they are considering moving to.
    - The user enters their current expenses for rent, utilities, groceries, etc.
 
-  <img width="492" alt="Screenshot 2024-09-20 at 4 36 07 PM" src="https://github.com/user-attachments/assets/e90f1456-91db-460a-9c0b-02d36b6aca9d">
+  <img width="270" alt="Screenshot 2024-09-20 at 4 36 07 PM" src="https://github.com/user-attachments/assets/e90f1456-91db-460a-9c0b-02d36b6aca9d">
 
 2. **API Integration**:
    - The application fetches live cost data for both cities using a public API.
@@ -35,7 +35,7 @@ The calculator fetches live cost data from an API and provides a detailed compar
    - Total living costs for both cities are calculated and displayed.
    - Percentage changes for each category are shown in bullet points at the bottom of the page.
      
-<img width="324" alt="Screenshot 2024-09-20 at 4 37 26 PM" src="https://github.com/user-attachments/assets/b7f5c97f-c2cc-4f24-960c-b6d0917b4e7b">
+<img width="270" alt="Screenshot 2024-09-20 at 4 37 26 PM" src="https://github.com/user-attachments/assets/b7f5c97f-c2cc-4f24-960c-b6d0917b4e7b">
 
 
 ## **Technologies Used**
